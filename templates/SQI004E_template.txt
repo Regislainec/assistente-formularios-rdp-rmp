@@ -1,0 +1,26 @@
+Relatório de Desenvolvimento/Melhoria de Produto
+Desenvolvimento RDP: {{ codigo_rdp }}
+Melhoria RMP: {{ codigo_rmp }}
+
+Cliente: {{ cliente }}
+Preço Mercado: R$ {{ preco_mercado }}
+Contato: {{ contato }}
+Potencial de Merc.: {{ potencial_mercado }}
+
+Código do Produto do Cliente: {{ codigo_cliente }}
+Nome Inicial do Produto Intelli: {{ codigo_intelli }}
+
+MOTIVO: {{ motivo }}
+PROCESSOS ENVOLVIDOS: {{ processos | join(', ') }}
+FERRAMENTAS ENVOLVIDAS: {{ ferramentas | join(', ') }}
+ANEXOS: {{ anexos | join(', ') }}
+
+OBSERVAÇÕES:
+{{ observacoes }}
+
+Data de Início do Processo: {{ data_inicio }}
+Data estipulada para Conclusão do Processo: {{ data_conclusao }}
+
+Aprovação da Engenharia de Produto: {{ engenharia_aprovacao }}
+Aprovação pela Diretoria Comercial: {{ comercial_aprovacao }}
+Aprovação pelo Cliente: {{ 'Aprovado' if cliente_aprovacao else 'Não Aprovado' }}
